@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="97dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/photo" />
+
+        <!-- Resume Text -->
+
+        <!-- Submit Button -->
+        <TextView
+            android:id="@+id/tvResume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:text="
+Name:\n
+Gaurav Sutar\n
+
+Education:\n
+B.Tech in Computer Science Engineering from D.Y Patil College Of Engineering and Technology, Kolhapur.\n
+12th: Yashwantrao Chavhan College,Karad.\n
+
+Skills:\n
+C++\n
+web Development\n
+java\n
+tailwind CSS\n
+
+Projects:
+Resume App, Banking System, Flutter Apps
+
+Email:
+gaurav@email.com
+"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

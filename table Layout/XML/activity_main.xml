@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4EE91E63"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:stretchColumns="1">
+
+            <!-- Title -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="@string/student_registration_form2"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- Name -->
+            <TableRow>
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="@string/enter_name3"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="180dp"
+                    android:layout_height="48dp"
+                    android:autofillHints=""
+                    android:hint="@string/type_here3"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <!-- Roll No -->
+            <TableRow>
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="@string/roll_no3"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etRoll"
+                    android:layout_width="180dp"
+                    android:layout_height="48dp"
+                    android:autofillHints=""
+                    android:hint="@string/type_roll_number3"
+                    android:inputType="number"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <!-- Register Button -->
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_span="2"
+                    android:text="@string/register3" />
+            </TableRow>
+
+            <!-- Back Button -->
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_span="2"
+                    android:text="@string/back" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
